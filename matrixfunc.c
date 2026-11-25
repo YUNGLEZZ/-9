@@ -47,3 +47,19 @@ void avg(int *matptr, size_t rows, size_t cols, double sum[]) {
         sum1 = 0;
     }
 }
+int last(int *matptr, size_t rows, size_t cols, size_t *pnt, size_t *pnt1) {
+    int find = 0;
+    if((rows == 0) || (cols == 0)) {
+        return 0;
+    } 
+    for(int r = 0; r < rows; r++) {
+        for(int c = 0; c < cols; c++) {
+            if(*(matptr + r*cols + c) < 0) {
+                *pnt = r; 
+                *pnt1 = c;
+                find = 1;
+            }
+        }
+    }
+    return find;
+} 

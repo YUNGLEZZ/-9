@@ -7,8 +7,7 @@ int main(void)
     char b;
     int j, i;
     double sum[50] = {0};
-    int n1[50] = {0};
-    int n2[50] = {0};
+    size_t o1, o2;
     do
     {
         printf("a Задать размер матрицы (строки, столбцы)\n");
@@ -46,6 +45,12 @@ int main(void)
             printf("%d\n", kolvo(arr, j, i));
             break;
         case 'f':
+        int qrr = last(arr, j, i, &o1, &o2);
+        if(qrr == 1) {
+            printf("Строка %zu; Столбец %zu\n", o1, o2);
+        } else {
+            printf("Элементов нет\n");
+        }
             break;
         default:
             break;
