@@ -47,6 +47,3 @@ void avg(int *matptr, size_t rows, size_t cols, double sum[]) {
         sum1 = 0;
     }
 }
-void last(int *matptr, size_t rows, size_t cols, int n1[], int n2[]) {
-    
-}
