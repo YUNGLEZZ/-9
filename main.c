@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include "matrixfunc.h"
-
+#define SIZE 100
 int main(void)
 {
-    int arr[50] = {0};
+    int arr[SIZE] = {0};
     char b;
     int j, i;
-    double sum[50] = {0};
+    double sum[SIZE] = {0};
     size_t o1, o2;
     do
     {
